@@ -1,35 +1,57 @@
+@font-face {
+    font-family: Lato;
+    src: url('../font/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lavanderia;
+    src: url('../font/Lavanderia-Regular.ttf');
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
+    font-family: 'Lato';
+    font-size: 2rem;
 }
 
 /*----------HEADER----------*/
 
 header {
     display: inline-block;
-    background-color: black;
+    background-color: #404040;
     color: white;
     width: 100%;
-    height: 10%;
+    height: 15%;
     text-align: center;
     position: fixed;
     z-index: 2;
+}
+
+header #logo img {
+    height: 80px;
+    display: inline;
 }
 
 #onglets ul li {
     font-size: 130%;
     padding: 5px 40px;
     display: inline-block;
+    letter-spacing: -1.5px;
+    vertical-align: middle;
 }
 
 #onglets li a {
     color: #FFF;
-    font-weight: bold;
     text-decoration: none;
     transition: all .3s ease-in-out;
 }
 
 #onglets li a:hover {
-    color: red;
+    color: #f26522;
 }
 
 /*--------CONTAINER---------*/
@@ -58,6 +80,12 @@ header {
 /*--------APP BLOCK---------*/
 .appBlock {
     background-color: #aab5f0;
+}
+
+.appBlock img {
+    width: 200px;
+    position: relative;
+    margin-left: 20%;
 }
 
 /*--------CONTACT BLOCK---------*/
