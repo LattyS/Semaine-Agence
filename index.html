@@ -32,7 +32,7 @@
 <header>
     <div id='onglets'>
         <ul id="menu">
-            <li><a href='#home' class="home">Accueil</a></li>
+            <li><a href='#home' class="accueil">Accueil</a></li>
             <li><a href='#museum' class="museum">Musées</a></li>
             <li><img src="images/logo.png" class="logo"></li>
             <li><a href='#application' class="application">Application</a></li>
@@ -44,12 +44,17 @@
 <div class='container'>
     <div id="fullpage">
         <div class="section home">
-            <img src='images/museeFabre.jpg'>
             <div class='homeDescription'>
                 <p>
-                    Archipel est un projet innovant , alliant la connaissance et la simplicité, à l’aide de sa
-                    puce(<span><a href='#puce'>?</a></span>)
+                    Archipel est un projet innovant , alliant la connaissance et la simplicité.<br>
+                    <button id="myBtn">La puce NFC</button> vous fait visiter les musées de façon interactive.
                 </p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">x</span>
+                        <img src="images/pucenfc.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section museumBlock">
@@ -63,7 +68,7 @@
                 <div class='museumNameBlock'>Pompidou</div>
             </div>
             <div class='museumImgBlock'><img src='images/artModern.jpg'>
-                <div class='museumNameBlock'>Art Moderne</div>
+                <div class='museumNameBlock'>M.A.M.</div>
             </div>
         </div>
         <div class="section appBlock">
@@ -86,7 +91,7 @@
             -->
 
             <ul id="download">
-                <a href=""><img src="images/googleplay.png"></a>
+                <a href="playstore.html"><img src="images/googleplay.png"></a>
                 <a href="appstore.html" target="_blank"><img src="images/appstore.png"></a>
                 <a href="windowsstore.html"><img src="images/windowsstore.png"></a>
             </ul>

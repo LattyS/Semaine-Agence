@@ -40,7 +40,7 @@ header img {
 
 }
 
-.home, .museum, .application, .contact {
+.accueil, .museum, .application, .contact {
     display: none;
 }
 
@@ -52,25 +52,73 @@ header img {
 }
 
 /*--------HOME BLOCK---------*/
-.home img {
-    width: 100%;
-    height: 80%;
+.home {
+    background-image: url("../images/museeFabre.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .homeDescription {
     font-family: 'Lato', sans-serif;
     background-color: rgba(251, 240, 246, 0.7);
-    position: absolute;
+    margin: 10% 10%;
     top: 25%;
-    z-index: 2;
-    font-size: 22px;
+    font-size: 2rem;
     text-align: center;
-    padding: 50px 100px;
+    padding: 10px 20px;
+    margin-top: 30%;
 }
 
 .homeDescription p {
     margin: 0 auto;
 }
+
+#myBtn {
+    background:none!important;
+    border:none;
+    padding:0!important;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 17% auto;
+    width: 80%;
+}
+
+.modal-content img {
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /*-------MUSEUM BLOCK--------*/
 
@@ -127,7 +175,7 @@ header img {
 }
 
 .appBlock .appText {
-float: left;
+    float: left;
 }
 
 #download img {
@@ -142,7 +190,8 @@ float: left;
 
 /*--------CONTACT BLOCK---------*/
 .contactBlock {
-    background-color: #7bc7bd;height: 200px;
+    background-color: #7bc7bd;
+    height: 200px;
 }
 
 #footer {
@@ -174,6 +223,7 @@ input[type=submit] {
 
 /*MEDIA QUERIES*/
 @media (min-width: 641px) {
+
     .museumNameBlock {
         margin-top: -17%;
     }
@@ -186,8 +236,19 @@ input[type=submit] {
 
 @media (min-width: 1025px) {
     .homeDescription {
-        left: 10%;
+        padding: 40px 100px;
+        margin-top: 10%;
     }
+
+    .modal-content {
+        margin: 3% auto;
+        width: 80%;
+    }
+
+    .modal-content img {
+        width: 85%;
+    }
+
 
     .museumImgBlock {
         height: 15%;
@@ -205,7 +266,7 @@ input[type=submit] {
         margin-top: -25%;
         left: auto;
         right: auto;
-        margin-left: 8%;
+        margin-left: 7.5%;
         margin-right: auto;
         z-index: 2;
         border: 5px solid #FFF;
@@ -214,11 +275,8 @@ input[type=submit] {
         font-size: 3rem;
         transition: all .3s ease-in-out;
     }
-}
 
-@media (min-width: 1025px) {
-
-    .home, .museum, .application, .contact {
+    .accueil, .museum, .application, .contact {
         display: block;
     }
 
