@@ -8,11 +8,6 @@
     src: url('../font/Lavanderia-Regular.ttf');
 }
 
-@font-face {
-    font-family: Berlin;
-    src: url(../font/berlin/BerlinBold.ttf);
-}
-
 html {
     font-size: 62.5%;
 }
@@ -171,6 +166,10 @@ header img {
     width: 200px;
 }
 
+.appText {
+    display: none;
+}
+
 .carousel {
     padding-top: 15%;
 }
@@ -304,9 +303,28 @@ input[type=submit] {
     }
 
     .carousel {
-        margin-right: 55%;
         padding-left: 5%;
         padding-top: 0%;
+        width: 500px;
+        float: left;
+    }
+
+    .appText {
+        display: block;
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 10%;
+        line-height: 2;
+    }
+
+    .appText span {
+        font-family: 'Lavanderia', sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    #download {
+        clear: both;
     }
 
     #download img {
@@ -315,7 +333,7 @@ input[type=submit] {
     }
 
     #footer {
-        padding: 1% 7%;
+        padding: 1% 15%;
     }
 
     .adress {
