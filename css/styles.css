@@ -74,28 +74,27 @@ header img {
 }
 
 #myBtn {
-    background:none!important;
-    border:none;
-    padding:0!important;
+    background: none !important;
+    border: none;
+    padding: 0 !important;
     font: inherit;
     font-weight: bold;
     cursor: pointer;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 3;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content/Box */
 .modal-content {
     margin: 17% auto;
     width: 80%;
@@ -105,7 +104,6 @@ header img {
     width: 100%;
 }
 
-/* The Close Button */
 .close {
     float: right;
     color: #000000;
@@ -118,7 +116,6 @@ header img {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /*-------MUSEUM BLOCK--------*/
 
@@ -174,6 +171,10 @@ header img {
     width: 200px;
 }
 
+.carousel {
+    padding-top: 15%;
+}
+
 .appBlock .appText {
     float: left;
 }
@@ -191,16 +192,20 @@ header img {
 /*--------CONTACT BLOCK---------*/
 .contactBlock {
     background-color: #7bc7bd;
-    height: 200px;
+
 }
 
 #footer {
+    color: #FFFFFF;
     text-align: center;
     height: 300px;
 }
 
-.form {
-    float: right;
+.adress .title {
+    font-family: 'Lavanderia', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 2;
 }
 
 input, textarea {
@@ -235,6 +240,29 @@ input[type=submit] {
 }
 
 @media (min-width: 1025px) {
+
+    .accueil, .museum, .application, .contact {
+        display: block;
+    }
+
+    #onglets ul li {
+        font-size: 130%;
+        padding: 2px 40px;
+        display: inline-block;
+        letter-spacing: -1.5px;
+        vertical-align: middle;
+    }
+
+    #onglets li a {
+        color: #FFF;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+    }
+
+    #onglets li a:hover {
+        color: #91c768;
+    }
+
     .homeDescription {
         padding: 40px 100px;
         margin-top: 10%;
@@ -248,7 +276,6 @@ input[type=submit] {
     .modal-content img {
         width: 85%;
     }
-
 
     .museumImgBlock {
         height: 15%;
@@ -276,36 +303,32 @@ input[type=submit] {
         transition: all .3s ease-in-out;
     }
 
-    .accueil, .museum, .application, .contact {
-        display: block;
-    }
-
-    #onglets ul li {
-        font-size: 130%;
-        padding: 2px 40px;
-        display: inline-block;
-        letter-spacing: -1.5px;
-        vertical-align: middle;
-    }
-
-    #onglets li a {
-        color: #FFF;
-        text-decoration: none;
-        transition: all .3s ease-in-out;
-    }
-
-    #onglets li a:hover {
-        color: #91c768;
-    }
-
     .carousel {
         margin-right: 55%;
         padding-left: 5%;
+        padding-top: 0%;
     }
 
     #download img {
         width: auto;
         height: 55px;
+    }
+
+    #footer {
+        padding: 1% 7%;
+    }
+
+    .adress {
+        float: left;
+    }
+
+    .form {
+        float: right;
+    }
+
+    .form p {
+        line-height: 2;
+        text-transform: uppercase;
     }
 
 }
