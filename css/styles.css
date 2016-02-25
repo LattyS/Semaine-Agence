@@ -151,8 +151,8 @@ header img {
 .museumImgBlock:hover .museumNameBlock {
     filter: brightness(100%);
     background-color: #FFF;
-    border-color: #91C768;
-    color: #91C768;
+    border-color: #7bc7bd;
+    color: #7bc7bd;
 }
 
 .museumImgBlock img:hover {
@@ -260,7 +260,7 @@ input[type=submit] {
     }
 
     #onglets li a:hover {
-        color: #91c768;
+        color: #7bc7bd;
     }
 
     .homeDescription {
