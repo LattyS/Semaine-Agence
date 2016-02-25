@@ -8,87 +8,246 @@
     src: url('../font/Lavanderia-Regular.ttf');
 }
 
+@font-face {
+    font-family: Berlin;
+    src: url(../font/berlin/BerlinBold.ttf);
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
-    margin: 0;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 2rem;
 }
 
 /*----------HEADER----------*/
-
 header {
-    display: inline-block;
+    display: block;
     background-color: #404040;
     color: white;
     width: 100%;
-    height: 15%;
+    height: 75px;
+    top: 0;
     text-align: center;
     position: fixed;
     z-index: 2;
 }
 
-header #logo img {
-    height: 80px;
-    display: inline;
+header img {
+    height: 70px;
+
 }
 
-#onglets ul li {
-    font-size: 130%;
-    padding: 5px 40px;
-    display: inline-block;
-    letter-spacing: -1.5px;
-    vertical-align: middle;
-}
-
-#onglets li a {
-    color: #FFF;
-    text-decoration: none;
-    transition: all .3s ease-in-out;
-}
-
-#onglets li a:hover {
-    color: #f26522;
+.home, .museum, .application, .contact {
+    display: none;
 }
 
 /*--------CONTAINER---------*/
 
 .container {
+    margin-top: 5%;
     width: 100%;
 }
 
 /*--------HOME BLOCK---------*/
-.homeBlock {
-    background-color: #FFFFFF;
+.home img {
+    width: 100%;
+    height: 80%;
+}
+
+.homeDescription {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(251, 240, 246, 0.7);
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+    font-size: 22px;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.homeDescription p {
+    margin: 0 auto;
 }
 
 /*-------MUSEUM BLOCK--------*/
 
-.box img {
+.museumImgBlock {
+    text-align: center;
+    height: 17%;
+}
+
+.museumImgBlock img {
+    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
     width: 100%;
-    height: 100%;
+    height: 25% !important;
     transition: all .3s ease-in-out;
 }
 
-.box img:hover {
-    width: 965px;
+.museumNameBlock {
+    position: absolute;
+    text-align: center;
+    margin-top: -45%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    border: 5px solid #FFF;
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 35px;
+    transition: all .3s ease-in-out;
+}
+
+.museumImgBlock:hover .museumNameBlock {
+    filter: brightness(100%);
+    background-color: #FFF;
+    border-color: #91C768;
+    color: #91C768;
+}
+
+.museumImgBlock img:hover {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
 }
 
 /*--------APP BLOCK---------*/
 .appBlock {
-    background-color: #aab5f0;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 3%;
 }
 
-.appBlock img {
+.appBlock .appImg {
     width: 200px;
-    position: relative;
-    margin-left: 20%;
+}
+
+.appBlock .appText {
+float: left;
+}
+
+#download img {
+    width: 100px;
+    height: auto;
+}
+
+#download img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 /*--------CONTACT BLOCK---------*/
 .contactBlock {
-    background-color: #3d768a;
+    background-color: #7bc7bd;height: 200px;
+}
+
+#footer {
+    text-align: center;
+    height: 300px;
+}
+
+.form {
+    float: right;
+}
+
+input, textarea {
+    border: 1px solid #404040;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px;
+    width: 200px;
+}
+
+input[type=text] {
+    width: 100px;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #404040;
+    color: #FFFFFF;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 641px) {
+    .museumNameBlock {
+        margin-top: -17%;
+    }
+
+    .museumImgBlock {
+        text-align: center;
+        height: 15%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .homeDescription {
+        left: 10%;
+    }
+
+    .museumImgBlock {
+        height: 15%;
+        width: 24.5%;
+        display: inline-block;
+    }
+
+    .museumImgBlock img {
+        height: 633px !important;
+    }
+
+    .museumNameBlock {
+        position: absolute;
+        text-align: center;
+        margin-top: -25%;
+        left: auto;
+        right: auto;
+        margin-left: 8%;
+        margin-right: auto;
+        z-index: 2;
+        border: 5px solid #FFF;
+        color: #FFF;
+        padding: 5px 10px;
+        font-size: 3rem;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .home, .museum, .application, .contact {
+        display: block;
+    }
+
+    #onglets ul li {
+        font-size: 130%;
+        padding: 2px 40px;
+        display: inline-block;
+        letter-spacing: -1.5px;
+        vertical-align: middle;
+    }
+
+    #onglets li a {
+        color: #FFF;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+    }
+
+    #onglets li a:hover {
+        color: #91c768;
+    }
+
+    .carousel {
+        margin-right: 55%;
+        padding-left: 5%;
+    }
+
+    #download img {
+        width: auto;
+        height: 55px;
+    }
+
 }

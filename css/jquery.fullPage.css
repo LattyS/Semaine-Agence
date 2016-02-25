@@ -50,8 +50,9 @@ html.fp-enabled,
     table-layout:fixed;
     width: 100%;
 }
-.fp-tableCell {
-    display: table-cell;
+.fp-tableCell{
+    margin-top: -5px; 
+    display: inline-block;
     vertical-align: middle;
     width: 100%;
     height: 100%;
