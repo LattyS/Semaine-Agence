@@ -207,6 +207,21 @@ header img {
     line-height: 2;
 }
 
+.adress .facebook {
+    width: 50px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form {
+    font-weight: bold;
+}
+
+form {
+    display: none;
+}
+
 input, textarea {
     border: 1px solid #404040;
     border-radius: 5px;
@@ -340,14 +355,12 @@ input[type=submit] {
         float: left;
     }
 
-    .adress .facebook {
-        width: 50px;
-        height: auto;
-        margin-top: 15px;
-    }
-
     .form {
         float: right;
+    }
+
+    form {
+        display: block;
     }
 
     .form p {
