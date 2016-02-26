@@ -340,6 +340,12 @@ input[type=submit] {
         float: left;
     }
 
+    .adress .facebook {
+        width: 50px;
+        height: auto;
+        margin-top: 15px;
+    }
+
     .form {
         float: right;
     }
